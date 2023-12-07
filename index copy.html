@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<link rel="stylesheet" href="mycss/Count_Down.css">
+				<section class="slide1">
+					<div class="alfa">
+						<div class="mov">
+							<div class="frente">
+								<p id="pp">0%</p>
+							</div>
+							<div class="tras">
+							</div>
+							<div class="meio">
+							</div>
+						</div>
+					</div>
+					<script>
+						const el = document.getElementById("pp");
+						let	num=0;
+							
+							window.setInterval( function(){
+							
+								num++;
+							
+								if( num > 100 ){
+									num = 0 ;
+								}
+							
+								el.innerHTML = num + "%" ;
+							 return el
+							},1000/5
+							);</script>
+
+				</section>
+
+
+
+
+				<section class="slide2">
+					<link rel="stylesheet" href="mycss/HoverEffect.css">
+					<div class="imgbox">
+						<img src="Photo/이지민.jpg" style="--i:2;--j:0;">
+						<img src="Photo/이지민.jpg" style="--i:1;--j:1;">
+						<img src="Photo/이지민.jpg" style="--i:0;--j:2;">
+						<img src="Photo/이지민.jpg" style="--i:-1;--j:3;">
+						<img src="Photo/이지민.jpg" style="--i:-2;--j:4;">
+						
+					</div>
+				</section>
+
+
+
+
+				<section class="slide3">
+					<link rel="stylesheet" href="mycss/Hover_Text.css">
+					<ul>
+						<li>
+						  <input type="checkbox"/>
+						  <div>여</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>울</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>컴</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>홈</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>페</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>이</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>지</div>
+						</li>
+					  </ul>
+				</section>
+
+
+
+
+				<section>
+
+				</section>
+
+
+
+
+				<section>Slide 5</section>
+				<section>Slide 6</section>
+				<section>Slide 7</section>
+				<section>Slide 8</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

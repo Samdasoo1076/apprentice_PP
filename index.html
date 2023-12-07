@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="mycss/Count_Down.css">
+		<link rel="stylesheet" href="mycss/HoverEffect.css">
+		<link rel="stylesheet" href="mycss/Hover_Text.css">
+		<link rel="stylesheet" href="mycss/infut_Out.css">
+		<link rel="stylesheet" href="mycss/Serch_nav.css">
+		<link rel="stylesheet" href="mycss/Navigation_Circle.css">
+		<link rel="stylesheet" href="mycss/NeOn.css">
+		<link rel="stylesheet" href="mycss/Neon_sircle.css">
+		<link rel="stylesheet" href="mycss/Raining.css">
+		<link rel="stylesheet" href="mycss/Wave_Text.css">
+		<link rel="stylesheet" href="mycss/3DEffect.css">
+		<link rel="stylesheet" href="mycss/VIGIL.css">
+		<link rel="stylesheet" href="mycss/Drag.css"/>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section>
+	<section>안녕하십니까</section>
+	<section>접니다</section>
+	<section>이지민의 뒤죽박죽 박물관</section>
+	<section>시작하겠습니다</section>
+</section>
+
+<section>
+	<section>첫 작품명은</section>
+	<section>JS서클입니다</section>
+				<section class="slide1 container">
+					<div class="content">
+						Slide 1
+						<div class="alfa">
+							<div class="mov">
+								<div class="frente">
+									<p id="pp">0%</p>
+								</div>
+								<div class="tras">
+								</div>
+								<div class="meio">
+								</div>
+							</div>
+						</div>
+						<script>
+							const el = document.getElementById("pp");
+							let num = 0;
+							window.setInterval(function () {
+								num++;
+								if (num > 100) {
+									num = 0;
+								}
+								el.innerHTML = num + "%";
+							}, 1000 / 5);
+						</script>
+				</section>
+				<section>다양한 시점에서 볼 수 있죠</section>
+				<section>다음 작품 보겠습니다</section>
+</section>
+
+<section>
+	<section>두번째 작품명은</section>
+	<section>슬픈 개구리입니다</section>
+				<section class="slide2 container">
+					<div class="imgbox">
+						<img src="Photo/이지민.jpg" style="--i:2;--j:0;">
+						<img src="Photo/이지민.jpg" style="--i:1;--j:1;">
+						<img src="Photo/이지민.jpg" style="--i:0;--j:2;">
+						<img src="Photo/이지민.jpg" style="--i:-1;--j:3;">
+						<img src="Photo/이지민.jpg" style="--i:-2;--j:4;">
+					</div>
+
+				</section>
+				<section>정말 슬픕니다.</section>
+</section>
+
+
+<section>
+	<section>세번째 작품명은</section>
+	<section>네온 사인 버튼입니다</section>
+				<section class="slide3 container">
+					<ul>
+						<li>
+						  <input type="checkbox" />
+						  <div>도</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>제</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>반</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>프</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>로</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>젝</div>
+						</li>
+						<li>
+						  <input type="checkbox" />
+						  <div>트</div>
+						</li>
+						
+					  </ul>
+
+
+				</section>
+				<section>색을 랜덤으로 표현하죠..</section>
+</section>
+
+<section>
+	<section>네번째 작품명은</section>
+	<section>없음 입니다.</section>
+				<section class="slide4 container">
+					<div class="searchBox">
+						<div class="shadow"> </div>
+						<input type="text" placeholder="검색하시오...">
+						<ion-icon name="search-outline"></ion-icon>
+					</div>
+					<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+					<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+						
+					</script>
+				</section>
+				<section>만든 이유를 저도 모르겠습니다..</section>
+			</section>
+
+
+			<section>
+				<section>네번째 작품명은</section>
+				<section>Mousemove 입니다</section>
+				<section class="slide5 container">
+					<section>
+					<div class="skew1">
+						<h2 class="layer">ntice</h2>
+					</div>
+					<div class="textbox">
+						<div class="skew2">
+							<h2 class="layer">appre<h2>
+						</div>
+					</div>
+				</section>
+				<script>
+					document.addEventListener('mousemove', parallaxText);
+					function parallaxText(e){
+						this.querySelectorAll('.layer').forEach(Layer => {
+							let x = (window.innerWidth - e.pageX * 2)/2;
+							Layer.style.transform = `translateX(${x}px)`;
+						})        
+					}
+				</script>
+				
+				</section>
+					<section>움직이기 때문이죠..</section>
+			</section>
+				
+
+			<section>
+					<section>다섯번째 작품명은</section>
+					<section>Toggle 입니다..</section>
+				<section class="slide6 container">
+					<ul class="menu">
+						<div class="toggle"> <ion-icon name="add-outline"></ion-icon></div>
+					</ul>
+					<script>
+						let menuToggle = document.querySelector('.toggle');
+						let menu = document.querySelector('.menu');
+						menuToggle.onclick = function(){
+							menu.classList.toggle('active')
+							menuToggle.classList.toggle('active')
+						}
+					</script>
+					<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+					<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+				</section>
+					<section>무언가를 만들다 실패했습니다..</section>
+			</section>
+
+<section>
+	<section>여섯번째 작품명은</section>
+	<section>Neon Sign입니다..</section>
+				<section class="slide7 container">
+					<div class="sign">
+						<span class="fast">a</span>pp<span class="flicker">ren</span>
+						tice
+					</div>
+
+				</section>
+				<section>네온 사인 멍가능합니다..🙏</section>
+				</section>
+
+				<section>
+					<section>일곱번째 작품명은</section>
+					<section>진심 좌우 반복 뛰기입니다..</section>
+				<section class="slide8 container">
+					<div class="loader"></div>
+					<div class="loader2">
+						<div class="loader3">
+				
+					
+						</div>
+					</div>
+					</section>
+					<section>사이타마와 같죠..</section>
+			</section>
+
+			<section>
+			<section>여덟번째 작품명은</section>
+			<section>"최면입니다"</section>
+				<section class="slide10 container">
+					<div class="loader">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</section>
+
+				<section>보고있으면 빠져들죠...</section>
+				<section>마치 저처럼...</section>
+</section>
+
+<section>
+				<section>잠시 쉬어가는 타임을 가지도록 하겠습니다..</section>
+				<section class="slide11 container">
+				<div title="쨔잔">쨔잔..</div>
+				</section>
+				<section>눈 정화를 하셨는지요..</section>
+</section>
+
+
+<section>
+<section>아홉번째 작품명은</section>
+<section>전자녀 입니다..</section>
+				<section class="slide13 container">
+					<style>
+					</style>
+					<div>
+						<textarea></textarea>
+						<button >Speak</button>
+					</div>
+    <script>
+        button = document.querySelector("button");
+        text = document.querySelector("textarea");
+        button.addEventListener("click", () => {
+            let utterance = new SpeechSynthesisUtterance(text.value);
+                speechSynthesis.speak(utterance);
+        })
+
+
+    </script>
+				</section>
+				<section>텍스트를 소리내어 읽어주죠...</section>
+</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
